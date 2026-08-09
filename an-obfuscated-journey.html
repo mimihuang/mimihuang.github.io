@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An Obfuscated Journey — a research diary by Miryam Huang." />
+    <meta name="theme-color" content="#fff8d8" />
+    <title>An Obfuscated Journey · Miryam Mi-Ying Huang</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header"><div class="nav-wrap">
+      <a class="site-title" href="index.html">Miryam Mi-Ying Huang</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">About</a><a href="publication-category.html">Publication (Category)</a><a href="mentoring-students.html">Mentoring Students</a><a class="active" href="blog.html">Blog</a><a href="side-channel.html">Side Channel</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks</a><a href="notes.html">Notes</a>
+      </nav>
+    </div></header>
+    <main class="article-page" id="main-content">
+      <a class="article-back" href="blog.html">← Back to Blog</a>
+      <p class="article-meta">Research diary</p>
+      <h1>An Obfuscated Journey</h1>
+      <article class="article-body">
+        <p>The room was quiet except for the faint hum of the monitor and the scribbling of markers against the whiteboard. Equations spilled into every corner like constellations of thought, half-erased, half-rewritten.</p>
+
+        <p>It was early 2023, and our paper on multiparty quantum computation with publicly verifiable identifiable abort was finally done. Eurocrypt 2024 would later take it, but at that moment (2023), I was already restless. My mind kept drifting toward a new question, one that glimmered just beyond the edges of what we knew.</p>
+
+        <blockquote>Could quantum fully homomorphic encryption (QFHE) ever be publicly verifiable?</blockquote>
+
+        <p>The idea wouldn’t leave me alone. I would walk home under the dim campus lights, and the question would echo in my head, refusing to quiet. Part of the curiosity came from another project I was working on with Baiyu Li, Xinyu Mao, and Jiapeng Zhang. We had been exploring post-quantum FHE with public verifiability, and somehow I had become enchanted with that phrase: public verifiability.</p>
+
+        <blockquote>What if we could make everything publicly verifiable?</blockquote>
+
+        <p>The following months were a blur of discussions and drafts. I would sit with Xinyu, Yu-Hsuan, and Er-Cheng, drawing circuits on ipad until the digital ink dried out. We tried, failed, argued, and tried again.</p>
+
+        <p>Then, one night in January 2024, it clicked my mind. A definition emerged in my dream, one that preprocesses the circuit during KeyGen. It wasn’t perfect, but it felt alive.</p>
+
+        <p>The next morning, I rushed to share it with Kai-Min and Wei-Kai. They listened with patience, and after a long silence, Kai-Min smiled slightly.</p>
+
+        <blockquote>“This,” he said, “sounds more like a garbled circuit than an FHE.”</blockquote>
+
+        <p>For a few seconds, my mind went blank. Then, slowly, it made sense.</p>
+
+        <p>That moment of realization was oddly freeing. I laughed and said, “So it’s not an FHE, it’s something else.”</p>
+
+        <p>And just like that, publicly verifiable quantum garbled circuits (pvQGC) were born.</p>
+
+        <p>The pieces started to fit together. The techniques from our earlier MPQC work such as EPR pairs for teleporting quantum inputs and outputs, Clifford authentication codes to protect quantum states, all of it could be repurposed here. The puzzle had a shape now.</p>
+
+        <p>A few weeks later, at the Simons Quantum Workshop, I caught up with Er-Cheng and began to formalize the idea. It felt like the start of something real. Then summer came, and I flew to the University of Washington to visit Andrea and Er-Cheng.</p>
+
+        <p>Seattle greeted me with soft rain and long evenings. In one of those meetings with Andrea, while all of us were both half-lost in thought, he suddenly looked up and said:</p>
+
+        <blockquote>“Maybe you can try to lift this Clifford-based pvQGC to quantum obfuscation?”</blockquote>
+
+        <p>His words hung in the air like lightning.</p>
+
+        <p>I felt my pulse quicken. Er-Cheng and I had talked about this before: Clifford-based QGCs, already had this strange and obfuscation-like flavor, except that the input is fixed. Now, it felt like a path opening before us.</p>
+
+        <p>But the road turned rough quickly. When we tried to lift our Clifford-based pvQGC into a full quantum obfuscation scheme, we stumbled upon a subtle attack. It was elegant, almost beautiful in how it broke our construction. I remember staring at the equations, half in frustration, half in admiration.</p>
+
+        <p>We later learned that other groups exploring Clifford-based obfuscation ran into similar attacks. It wasn’t an impossibility result, it just meant that this particular route couldn’t reach the destination. Like finding a locked door at the end of a corridor you had mapped out for months.</p>
+
+        <p>So we turned around and started again.....</p>
+
+        <p>This time, we decided to build quantum obfuscation from the ground up. We dove into [BKNY23] and [BBV24], tracing every line, every definition. Both were limited to pseudo-deterministic and classical input-output only, but they had hints of deeper possibilities.</p>
+
+        <p>[BKNY23] drew the formal barrier clearly, due to Mahadev’s CVQC results for decision problems. [BBV24], though, whispered a different promise: that maybe, with the right tools, we could extend their approach to general quantum functionalities.</p>
+
+        <p>That whisper became our motivation.</p>
+
+        <p>And somehow, we did it. We found a way to extend [BBV24] to support general functionality, though we had to make one compromise—the final oracle call had to be classical.</p>
+
+        <p>It felt like solving a riddle only to realize the answer had a cost. The restriction weakened the security and made the scheme feel less like quantum obfuscation and more like a quantum one-time program. The STOC reviewers pointed that out, and though it stung, I knew they were right.</p>
+
+        <p>After that, I began to ask myself a quieter question.</p>
+
+        <blockquote>If we don't know how to obfuscate everything, what can we obfuscate meaningfully?</blockquote>
+
+        <p>For days, we would sit at my desk and stare at the whiteboard. Then, one evening, it struck us.</p>
+
+        <blockquote>Unitary transformations!</blockquote>
+
+        <p>They behaved so much like deterministic quantum functions: predictable, reversible, elegant. Maybe this was where we were supposed to look.</p>
+
+        <p>That realization felt different from the others. Not explosive, but calm, like watching the first light of dawn after a long night.</p>
+
+        <p>Now, when I think back, I see that this was never just about one definition or one theorem. It was about learning when to let go of an idea and when to chase it harder.</p>
+
+        <p>The road ahead is still uncertain, but at least we have a direction, a faint constellation to follow. Somewhere among those stars lies the promise of true quantum obfuscation.</p>
+      </article>
+    </main>
+    <footer class="site-footer"><div><p>Email: <a href="mailto:miryamhuang@gmail.com">miryamhuang@gmail.com</a></p><p>© <span data-current-year>2026</span> Miryam Mi-Ying Huang</p></div></footer>
+  </body>
+</html>

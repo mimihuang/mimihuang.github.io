@@ -1,0 +1,10 @@
+{
+  "name": "miryam-huang-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Side projects, games, and music by Miryam Huang." />
+    <meta name="theme-color" content="#fff8d8" />
+    <title>Side Channel · Miryam Mi-Ying Huang</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header"><div class="nav-wrap">
+      <a class="site-title" href="index.html">Miryam Mi-Ying Huang</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">About</a><a href="publication-category.html">Publication (Category)</a><a href="mentoring-students.html">Mentoring Students</a><a href="blog.html">Blog</a><a class="active" href="side-channel.html">Side Channel</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks</a><a href="notes.html">Notes</a>
+      </nav>
+    </div></header>
+    <section class="site-banner interior-banner"><div class="banner-inner"><h1>Side Channel</h1><p>Games, music, and ideas that live beside the main research channel.</p></div></section>
+    <main class="interior-main" id="main-content">
+      <div class="resource-grid side-channel-grid">
+        <section class="resource-card">
+          <figure class="side-channel-figure">
+            <img
+              src="assets/quantum-gomoku.png"
+              alt="Quantum Gomoku game board showing Player A winning"
+              width="1280"
+              height="719"
+            />
+          </figure>
+          <span class="tag">Game</span>
+          <h2>Quantum Gomoku</h2>
+          <p>Player A (Black) and Player B (White) take turns playing.</p>
+          <p class="state-line"><strong>Player A:</strong> |0⟩, |+⟩ &nbsp;&nbsp; <strong>Player B:</strong> |1⟩, |-⟩</p>
+
+          <div class="game-rules">
+            <h3>How to play</h3>
+            <p>Player A must place a stone on the first turn. On each subsequent turn, a player may choose one action:</p>
+            <ul>
+              <li>Place a stone in one of their allowed quantum states; or</li>
+              <li>Measure unmeasured stones using the standard or Hadamard basis.</li>
+            </ul>
+            <p>After completing one action, the turn immediately passes to the next player.</p>
+
+            <h3>Winning condition</h3>
+            <p>After a measurement, a player wins if five stones of the same color are connected consecutively in a straight line—horizontally, vertically, or diagonally.</p>
+          </div>
+          <p class="credit-line">The game was designed by <a href="https://sites.google.com/view/erchengtang" target="_blank" rel="noreferrer">Er-Cheng Tang</a> and Miryam Huang.</p>
+          <div class="button-row">
+            <a class="button-link" href="https://quantum-gomoku-online.onrender.com/" target="_blank" rel="noreferrer">Play here</a>
+            <a class="button-link" href="https://github.com/mimihuang/quantum-gomoku-online" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </section>
+        <section class="resource-card">
+          <figure class="side-channel-figure">
+            <img
+              src="assets/side-channel-music.png"
+              alt="A laptop running Logic Pro beside a MIDI keyboard"
+              width="1280"
+              height="863"
+            />
+          </figure>
+          <span class="tag coral">Music</span>
+          <h2>Where math hums, and proofs sing</h2>
+          <p>I grew up playing piano, violin, and singing in choir. I was the vocalist in my high-school rock band. In college, I joined a digital music production club and once wrote—and sold—a song for the College of Science. I also wrote our department's graduation song. Lately, I’ve stepped away from strings, listening more to what my body and physical therapy need.</p>
+          <p>Sometimes, I write songs inspired by research that moves me—something elegant or quietly brilliant.</p>
+          <p>If our work shares that spark, maybe we can shape it into music together. My preferred software is Logic Pro, GarageBand, and REAPER.</p>
+          <div class="button-row">
+            <a class="button-link" href="https://youtu.be/oMKl97VmSVY" target="_blank" rel="noreferrer">Song</a>
+            <a class="button-link" href="https://www.youtube.com/watch?v=Vep-lICyBfM" target="_blank" rel="noreferrer">Video</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><div><p>Email: <a href="mailto:miryamhuang@gmail.com">miryamhuang@gmail.com</a></p><p>© <span data-current-year>2026</span> Miryam Mi-Ying Huang</p></div></footer>
+  </body>
+</html>
