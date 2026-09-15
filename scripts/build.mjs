@@ -18,7 +18,7 @@ const required = [
   ...pages,
   "styles.css",
   "script.js",
-  "assets/miryam-huang.png"
+  "assets/miryam-huang.jpg"
 ];
 
 for (const file of required) {
@@ -45,7 +45,7 @@ for (const page of pages) {
 }
 await cp(resolve(root, "styles.css"), resolve(output, "styles.css"));
 await cp(resolve(root, "script.js"), resolve(output, "script.js"));
-await cp(resolve(root, "assets/miryam-huang.png"), resolve(output, "assets/miryam-huang.png"));
+await cp(resolve(root, "assets/miryam-huang.jpg"), resolve(output, "assets/miryam-huang.jpg"));
 await cp(resolve(root, ".nojekyll"), resolve(output, ".nojekyll"));
 
 console.log("Build complete: dist/");

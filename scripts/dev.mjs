@@ -8,6 +8,8 @@ const root = process.cwd();
 const contentTypes = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",
+  ".jpeg": "image/jpeg",
+  ".jpg": "image/jpeg",
   ".js": "text/javascript; charset=utf-8",
   ".png": "image/png",
   ".txt": "text/plain; charset=utf-8"
