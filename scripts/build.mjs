@@ -6,6 +6,7 @@ const output = resolve(root, "dist");
 const pages = [
   "index.html",
   "publication-category.html",
+  "communications.html",
   "mentoring-students.html",
   "blog.html",
   "an-obfuscated-journey.html",

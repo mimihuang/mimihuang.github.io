@@ -458,6 +458,25 @@ img {
   font-size: 17px;
 }
 
+.communications-note {
+  max-width: 850px;
+  margin: 0 0 38px;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--coral);
+  background: var(--green-soft);
+  color: #344644;
+  font-size: 15px;
+}
+
+.communications-note p {
+  margin: 0;
+}
+
+.communications-note p + p {
+  margin-top: 12px;
+}
+
 .content-card {
   padding: 28px 30px;
   border: 1px solid var(--border);
