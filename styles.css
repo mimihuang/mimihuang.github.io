@@ -477,6 +477,11 @@ img {
   margin-top: 12px;
 }
 
+.communications-emphasis {
+  color: var(--coral);
+  font-weight: 600;
+}
+
 .content-card {
   padding: 28px 30px;
   border: 1px solid var(--border);
