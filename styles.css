@@ -482,6 +482,33 @@ img {
   font-weight: 600;
 }
 
+.paper-story {
+  max-width: 780px;
+  margin-top: 16px;
+  padding: 16px 18px 17px;
+  border: 1px solid #efcfc7;
+  border-radius: 10px;
+  background: var(--coral-soft);
+  box-shadow: 0 5px 14px rgba(36, 75, 74, 0.06);
+  color: #4b5856;
+}
+
+.paper-story-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #8e3e32;
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category-item .paper-story p {
+  margin: 0;
+  color: #4b5856;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
 .content-card {
   padding: 28px 30px;
   border: 1px solid var(--border);
