@@ -509,6 +509,12 @@ img {
   line-height: 1.65;
 }
 
+.category-item .paper-story .paper-story-summary {
+  margin-bottom: 8px;
+  color: #314e4b;
+  font-weight: 600;
+}
+
 .content-card {
   padding: 28px 30px;
   border: 1px solid var(--border);
