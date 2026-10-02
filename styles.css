@@ -328,6 +328,16 @@ img {
   margin-top: 7px;
 }
 
+.news-block .notes-news-link {
+  color: var(--coral);
+  text-decoration-color: rgba(196, 93, 76, 0.5);
+}
+
+.news-block .notes-news-link:hover {
+  color: var(--green-dark);
+  text-decoration-color: var(--green-dark);
+}
+
 .content-section {
   padding: 64px 0;
   border-top: 1px solid var(--border);
