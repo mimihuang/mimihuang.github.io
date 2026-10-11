@@ -182,6 +182,16 @@ img {
   font-size: 17px;
 }
 
+.banner-inner .hero-contact-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.hero-contact-note a {
+  color: var(--coral);
+  font-weight: 600;
+}
+
 .banner-inner span {
   display: block;
   margin-top: 8px;
