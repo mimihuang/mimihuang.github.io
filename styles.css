@@ -535,6 +535,10 @@ img {
   font-weight: 600;
 }
 
+.category-item .paper-story .paper-story-motivation {
+  margin-bottom: 8px;
+}
+
 .content-card {
   padding: 28px 30px;
   border: 1px solid var(--border);
