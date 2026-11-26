@@ -338,24 +338,14 @@ img {
   margin-top: 7px;
 }
 
-.news-block .notes-news-link {
+.news-block .news-accent-link {
   color: var(--coral);
   text-decoration-color: rgba(196, 93, 76, 0.5);
 }
 
-.news-block .notes-news-link:hover {
+.news-block .news-accent-link:hover {
   color: var(--green-dark);
   text-decoration-color: var(--green-dark);
-}
-
-.news-block .post-agi-news-link {
-  color: #685478;
-  text-decoration-color: currentColor;
-}
-
-.news-block .post-agi-news-link:hover,
-.news-block .post-agi-news-link:focus-visible {
-  color: #493759;
 }
 
 .content-section {
