@@ -702,6 +702,20 @@ img {
   padding-top: 0;
 }
 
+.research-direction-note {
+  max-width: 850px;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--coral);
+  background: var(--green-soft);
+  color: #344644;
+  font-size: 16px;
+}
+
+.research-direction-note p {
+  margin: 0;
+}
+
 .category-item {
   padding: 13px 0;
 }
