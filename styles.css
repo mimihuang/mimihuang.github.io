@@ -348,6 +348,16 @@ img {
   text-decoration-color: var(--green-dark);
 }
 
+.news-block .post-agi-news-link {
+  color: #685478;
+  text-decoration-color: currentColor;
+}
+
+.news-block .post-agi-news-link:hover,
+.news-block .post-agi-news-link:focus-visible {
+  color: #493759;
+}
+
 .content-section {
   padding: 64px 0;
   border-top: 1px solid var(--border);
