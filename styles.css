@@ -705,15 +705,19 @@ img {
 .research-direction-note {
   max-width: 850px;
   padding: 20px 22px;
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--coral);
-  background: var(--green-soft);
-  color: #344644;
+  border: 1px solid #d8d2e2;
+  border-left: 4px solid #8a789a;
+  background: #f2eff6;
+  color: #45414b;
   font-size: 16px;
 }
 
 .research-direction-note p {
   margin: 0;
+}
+
+.research-direction-note p + p {
+  margin-top: 14px;
 }
 
 .category-item {
